@@ -310,9 +310,9 @@ This project is released under the MIT License. See [LICENSE](LICENSE) for detai
 
 ## 📬 Contact
 - Maintainer: Your Name — replace with your details  
-- Email: your.email@example.com  
-- GitHub: https://github.com/yourusername  
-- LinkedIn: https://linkedin.com/in/yourprofile
+- Email:   animeshsahoo451@gmail.com
+- GitHub: https://github.com/animesh6532  
+- LinkedIn: https://www.linkedin.com/in/animesh-sahoo-b03151302
 
 ---
 
