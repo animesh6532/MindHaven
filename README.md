@@ -54,34 +54,34 @@ MindHaven combines an intuitive Next.js frontend with a robust Express + MongoDB
 ```mermaid
 flowchart LR
   subgraph Frontend
-    FE[Next.js + TypeScript UI]
+    FE["Next.js + TypeScript UI"]
   end
 
   subgraph Backend
-    BE[Express + TypeScript API]
-    Auth[Auth Service (JWT)]
-    API[REST Endpoints]
-    Services[Business Services]
+    BE["Express + TypeScript API"]
+    AUTH["Auth Service (JWT)"]
+    API["REST Endpoints"]
+    SERVICES["Business Services"]
   end
 
   subgraph AI
-    AIModel[AI Services / Chat SDK]
-    Moderation[Content Moderation]
+    AIMODEL["AI Services / Chat SDK"]
+    MODERATION["Content Moderation"]
   end
 
   subgraph Data
     DB[(MongoDB + Mongoose)]
-    Cache[Redis Cache]
+    CACHE["Redis Cache"]
   end
 
-  FE -- REST / Web -> BE
-  BE -- Auth -> Auth
-  BE -- Queries -> DB
-  BE -- Cache -> Cache
-  BE -- AI Requests -> AIModel
-  AIModel -- Moderation -> Moderation
-  BE -- Emails -> Nodemailer
-  DB -- Backups -> Storage[(S3 / Backups)]
+  FE -- "REST / Web" --> BE
+  BE -- "Auth" --> AUTH
+  BE -- "Queries" --> DB
+  BE -- "Cache" --> CACHE
+  BE -- "AI Requests" --> AIMODEL
+  AIMODEL -- "Moderation" --> MODERATION
+  BE -- "Emails" --> NODEMAILER["Nodemailer"]
+  DB -- "Backups" --> STORAGE[(S3 / Backups)]
 
   style FE fill:#f9fafb,stroke:#111827
   style BE fill:#fef3c7,stroke:#92400e
